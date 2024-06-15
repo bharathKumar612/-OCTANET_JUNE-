@@ -1,0 +1,167 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://img.freepik.com/premium-vector/list-template-scrapbooking-collage-vintage-template-blank-reminders-notes-old-key_610601-1195.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: transparent;
+}
+
+header .container {
+  height: 10vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.logo {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.logo img {
+  height: 35px;
+  width: 30px;
+}
+
+.logo p {
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 800px;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 14px;
+}
+
+li {
+  font-size: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+}
+
+.main {
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+}
+
+.main img {
+  display: block;
+  margin: auto;
+  padding-bottom: 50px;
+  height: 100%;
+  filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.349))
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.content .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: auto;
+  height: 50%;
+}
+
+.todo-input {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+#taskInput {
+  height: 50px;
+  flex-grow: 10;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#addTaskBtn {
+  height: 50px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#taskList li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#taskList li span {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+#taskList li button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#taskList li .completeBtn {
+  background-color: #4CAF50;
+}
+
+#taskList li .deleteBtn {
+  background-color: #f44336;
+}
